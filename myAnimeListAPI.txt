@@ -1,0 +1,58 @@
+------Top List------------
+
+Top Manga https://api.jikan.moe/v4/top/manga
+Top Anime https://api.jikan.moe/v4/top/anime
+
+Upcoming https://api.jikan.moe/v4/seasons/upcoming
+
+
+------Search--------------
+https://api.jikan.moe/v4/anime?q=bleach
+
+
+
+------Pitures-------------
+
+manga pictures https://api.jikan.moe/v4/manga/{id}/pictures
+anime pictures https://api.jikan.moe/v4/anime/{id}/pictures
+
+
+
+-------Details------------
+
+Get anime full by id https://api.jikan.moe/v4/anime/{id}/full
+Get manga full by id https://api.jikan.moe/v4/manga/{id}/full
+
+
+
+-------News---------------
+
+anime news https://api.jikan.moe/v4/anime/{id}/news
+
+
+
+----------Browse Anime----------
+
+random anime https://api.jikan.moe/v4/random/anime
+recent anime recommendations https://api.jikan.moe/v4/recommendations/anime
+
+
+----------Browse Manga----------
+
+random manga https://api.jikan.moe/v4/random/anime
+recent manga recommendations https://api.jikan.moe/v4/recommendations/anime
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+anime recommondations https://api.jikan.moe/v4/anime/{id}/recommendations
