@@ -1,7 +1,7 @@
 ------Top List------------
 
-Top Manga https://api.jikan.moe/v4/top/manga
 Top Anime https://api.jikan.moe/v4/top/anime
+Top Manga https://api.jikan.moe/v4/top/manga
 
 Upcoming https://api.jikan.moe/v4/seasons/upcoming
 

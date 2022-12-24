@@ -19,7 +19,10 @@ export const fetchFromAPI = async (url, params) => {
     headers: {},
   }
 
-  const { data } = await axios.get(`${baseUrl}/${url}`, options)
-
-  return data
+  try {
+    const { data } = await axios.get(`${baseUrl}${url}`, options)
+    return data
+  } catch (error) {
+    return 0
+  }
 }

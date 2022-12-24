@@ -1,47 +1,29 @@
 <script setup>
 import { Swiper } from 'swiper/vue'
 import { SwiperSlide } from 'swiper/vue'
-import { Pagination, Navigation, Lazy  } from 'swiper'
+import { Pagination, Navigation, Parallax } from 'swiper'
 import SwiperCell from './SwiperCell.vue';
 
 import "swiper/css"
 import "swiper/css/pagination"
 import "swiper/css/navigation"
-import "swiper/css/lazy"
 
-const modules = [Pagination, Navigation, Lazy]
+const modules = [Pagination, Navigation, Parallax]
+const props = defineProps({
+    anime: Object,
+    manga: Object,
+})
 
 </script>
 
 <template>
-    <Swiper :slides-per-view="4" :space-between="30" :modules="modules" :pagination="{ clickable: true }"
-        :navigation="true" :loop="true" :lazy="true" class="mySwiper">
+    <Swiper :style="{ '--swiper-navigation-color': '#fff', }" :speed="600" :parallax="true" :navigation="true"
+        :modules="modules" class="mySwiper">
         <SwiperSlide>
-            <SwiperCell />
+            <SwiperCell :data="props.anime" />
         </SwiperSlide>
         <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
-        </SwiperSlide>
-        <SwiperSlide>
-            <SwiperCell />
+            <SwiperCell :data="props.manga" />
         </SwiperSlide>
     </Swiper>
 </template>

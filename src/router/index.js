@@ -52,6 +52,12 @@ const router = createRouter({
       path: '/view/details/:id',
       name: 'details',
       component: () => import('../views/DetailsView.vue'),
+      beforeEnter(to) {
+        // console.log(to.query.type)
+        if (to.query.type !== 'anime' && to.query.type !== 'manga') {
+          return { name: '404' }
+        }
+      },
     },
     {
       path: '/gallery/:id',

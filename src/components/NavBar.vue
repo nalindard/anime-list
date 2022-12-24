@@ -7,15 +7,16 @@ import { RouterLink } from 'vue-router';
 <template>
     <nav class="navbar shadow-md text-blue-600">
         <span class="navbar-start">
-            <i class="fa-solid fa-film"></i>
+            <RouterLink :to="{ name: 'home' }">
+                <i class="fa-solid fa-film"></i>
+            </RouterLink>
         </span>
-        <span class="navbar-center">navbar-center</span>
+        <span class="navbar-center"></span>
         <span class="navbar-end flex gap-4">
-            <RouterLink :to="{ name: 'home' }">Home</RouterLink>
-            <RouterLink :to="{ name: 'about' }">About</RouterLink>
             <RouterLink :to="{ name: 'search' }">Search</RouterLink>
-            <RouterLink :to="{ name: 'anime' }">anime</RouterLink>
-            <RouterLink :to="{ name: 'manga' }">manga</RouterLink>
+            <RouterLink :to="{ name: 'anime' }">Anime</RouterLink>
+            <RouterLink :to="{ name: 'manga' }">Manga</RouterLink>
+            <RouterLink :to="{ name: 'about' }">About</RouterLink>
         </span>
     </nav>
 </template>
