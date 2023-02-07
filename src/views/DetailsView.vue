@@ -30,11 +30,11 @@ onMounted(() => {
 </script>
 
 <template>
-    <div v-if="!loading">
-        <h2 class="font-bold text-4xl text-pink-600">This is Details page</h2>
-        <h2 class="font-bold text-4xl text-pink-600">{{ route.params.id }}</h2>
+    <div v-if="!loading" class="pt-20 px-6">
+        <h2 class="font-bold text-4xl color-second">This is Details page</h2>
+        <!-- <h2 class="font-bold text-4xl text-pink-600">{{ route.params.id }}</h2> -->
         <div>
-            <DetailsViewAnime v-if="content === 'anime'" :data="results.data" />
+            <DetailsViewAnime v-if="content === 'anime'" :data="results.data" :producers="results.data.producers"/>
             <DetailsViewManga v-if="content === 'manga'" :data="results.data" />
         </div>
     </div>

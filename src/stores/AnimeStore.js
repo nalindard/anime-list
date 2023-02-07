@@ -3,6 +3,8 @@ import { ref, computed } from 'vue'
 import { fetchFromAPI } from '../helpers/FetchFrom'
 import { checkStorage, getStorage, setStorage } from '../helpers/sessionStorage'
 
+const obj = {rating: 'g'}
+
 export const useAnimeStore = defineStore('anime', () => {
   // State,
 
@@ -37,7 +39,7 @@ export const useAnimeStore = defineStore('anime', () => {
         // console.log('From top: ', topMangaList.value.data)
       }
     } else {
-      const res = await fetchFromAPI(`top/${AorM}`)
+      const res = await fetchFromAPI(`top/${AorM}`,obj)
       setStorage(str, res)
       if (AorM === 'anime') {
         setValues(topAnimeList, topAnimeListLoading, str)
@@ -68,7 +70,7 @@ export const useAnimeStore = defineStore('anime', () => {
         // console.log('From top: ', topMangaList.value.data)
       }
     } else {
-      const res = await fetchFromAPI(`recommendations/${AorM}`)
+      const res = await fetchFromAPI(`recommendations/${AorM}`,obj)
       // console.log(res)
       setStorage(str, res)
       if (AorM === 'anime') {
@@ -95,7 +97,7 @@ export const useAnimeStore = defineStore('anime', () => {
         // console.log('From top: ', randomMangaList.value.data)
       }
     } else {
-      const res = await fetchFromAPI(`random/${AorM}`)
+      const res = await fetchFromAPI(`random/${AorM}`,obj)
       // console.log(res)
       setStorage(str, res)
       if (AorM === 'anime') {

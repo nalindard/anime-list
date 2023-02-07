@@ -27,10 +27,9 @@ let intervelID = setInterval(() => {
 </script>
 
 <template>
-    <div v-if="!loading">
-        <h2 class="font-bold text-4xl text-pink-600">This is Browse Anime page</h2>
+    <div v-if="!loading" class="pt-20 px-6">
+        <h2 class="font-bold text-4xl color-second">Browse Anime</h2>
 
-        <h2 class="font-bold text-4xl text-pink-600">Recent</h2>
         <div v-for="i in recent" :key="i.mal_id" class="pt-7 flex w-full flex-wrap">
             <AnimeCard :data="i.entry[0]" />
             <AnimeCard :data="i.entry[1]" />

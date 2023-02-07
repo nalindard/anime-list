@@ -13,6 +13,10 @@ const baseUrl = import.meta.env.VITE_API_BASE_URL
 //   },
 // };
 
+// const obj = {rating: 'g'}
+
+// axios.defaults.params['rating'] = 'g'
+
 export const fetchFromAPI = async (url, params) => {
   const options = {
     params: params,

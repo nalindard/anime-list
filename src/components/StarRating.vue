@@ -11,19 +11,19 @@ const props = defineProps({
 </script>
 
 <template>
-    {{ props }}
+    <!-- {{ props }} -->
     <div class="rating rating-sm rating-half pointer-events-none">
         <input type="radio" name="rating-10" class="rating-hidden" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-1" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-2" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-1" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-2" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-1" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-2" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-1" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-2" checked />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-1" />
-        <input type="radio" class="bg-green-500 mask mask-star-2 mask-half-2" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-1" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-2" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-1" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-2" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-1" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-2" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-1" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-2" checked />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-1" />
+        <input type="radio" class="bg-red-100 mask mask-star-2 mask-half-2" />
     </div>
 
 </template>

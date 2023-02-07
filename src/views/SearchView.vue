@@ -19,10 +19,10 @@ watch(results, () => console.log(results.value.data))
 </script>
 
 <template>
-    <div>
-        <h2 class="font-bold text-4xl text-pink-600">This is search page</h2>
+    <div class="pt-20 color-main px-6 min-h-screen w-full">
+        <h2 class="font-bold text-4xl pb-7">Search name...</h2>
         <SearchBar @search="searchFor" />
-        <div v-if="loaded">
+        <div v-if="loaded" class="pb-7">
             <div v-for="i in results.data" :key="i.mal_id" class="flex flex-wrap">
                 <SearchResultCard :data="i" />
             </div>

@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-    <div>
+    <div class="color-main">
         {{ props.data.mal_id }}
         <p>{{ props.data.chapters }} </p>
         <p>{{ props.data.authors }} </p>

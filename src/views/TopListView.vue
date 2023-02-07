@@ -55,11 +55,10 @@ if (type.value === 'manga') {
 </script>
 
 <template>
-    <div v-if="!loading">
-        <h2 class="font-bold text-4xl text-pink-600">This is Top list page</h2>
-        <h2 class="font-bold text-4xl text-pink-600">{{ route.params.list }}</h2>
+    <div v-if="!loading" class="pt-20 px-6">
+        <h2 class="font-bold text-4xl color-second">Top {{ route.params.list }} list ...!</h2>
         <!-- {{ topList }} -->
-        <div v-for="i in topList" :key="i.mal_id" class="pt-8">
+        <div v-for="i in topList" :key="i.mal_id" class="pt-8 color-main">
             <TopListCard :data="i" :type="type" />
         </div>
     </div>
